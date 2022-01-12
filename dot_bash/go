@@ -1,0 +1,6 @@
+# Add go binaries in path
+if [ -d ~/go/bin ]
+then
+	export PATH=$PATH:~/go/bin
+fi
+

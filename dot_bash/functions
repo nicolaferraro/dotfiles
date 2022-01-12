@@ -1,0 +1,11 @@
+# Squash last two commit into 1 and edit the combined message
+squashlast() {
+  git reset --soft HEAD~2 && git commit --edit -m"$(git log --format=%B --reverse HEAD..HEAD@{1})"
+}
+
+# Clean the console and reset the color
+merda() {
+  tput reset
+  clear
+}
+

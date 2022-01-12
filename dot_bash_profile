@@ -1,0 +1,8 @@
+# .bash_profile
+
+# Load custom files
+for f in ~/.bash/*
+do
+	source $f
+done
+

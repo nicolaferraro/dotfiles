@@ -1,0 +1,5 @@
+# Kamel client
+if which kamel &> /dev/null
+then
+	source <(kamel completion bash)
+fi
