@@ -9,3 +9,8 @@ merda() {
   clear
 }
 
+# Switch to a different namespace in kubernetes
+kubeswitch() {
+  kubectl config set-context --current --namespace "$@"
+}
+
