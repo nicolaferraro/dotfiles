@@ -14,3 +14,8 @@ kubeswitch() {
   kubectl config set-context --current --namespace "$@"
 }
 
+# Create a dir and enter
+md() {
+  mkdir -pv "$@" && cd "$@"
+}
+
