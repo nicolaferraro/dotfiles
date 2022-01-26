@@ -1,0 +1,5 @@
+# Stern
+if which stern &> /dev/null
+then
+	source <(stern --completion bash)
+fi
