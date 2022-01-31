@@ -9,10 +9,10 @@ merda() {
   clear
 }
 
-# Switch to a different namespace in kubernetes
-kubeswitch() {
-  kubectl config set-context --current --namespace "$@"
-}
+## Switch to a different namespace in kubernetes
+#kubeswitch() {
+#  kubectl config set-context --current --namespace "$@"
+#}
 
 # Create a dir and enter
 md() {
