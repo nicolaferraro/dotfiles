@@ -1,0 +1,13 @@
+# kcfg
+
+kcfg() {
+  local name=$1
+  if [ -z "$name" ]; then
+    unset KUBECONFIG
+    echo "KUBECONFIG unset for current shell"
+  else 
+    export KUBECONFIG=$HOME/.kube/$name
+    echo "KUBECONFIG set to $KUBECONFIG for current shell"
+  fi
+}
+
